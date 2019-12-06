@@ -1,0 +1,52 @@
+#alert-box {
+  .discount {
+    background-color: $danger-color;
+    padding: 12px;
+    .discount-content {
+      font-family: "Roboto", sans-serif;
+      span {
+        color: white;
+        a {
+          text-decoration: underline;
+          color: white;
+        }
+      }
+      button {
+        float: none;
+        vertical-align: middle;
+        margin-left: 15px;
+        font-size: 30px;
+        padding: 0px;
+        margin-bottom: 4px;
+        font-family: inherit;
+      }
+    }
+  }
+}
+#top-nav {
+  .top-navigation {
+    background-color: $primary-dark-color;
+    .contact {
+      padding: 12px;
+      margin-bottom: 0px;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        a {
+          color: white;
+          text-decoration: none;
+          @include transition(all 0.5s);
+          i{
+            margin-right: 9px;
+          }
+          &:hover {
+            color: $orange-color;
+          }
+        }
+        &:last-child{
+            margin-left:9px;
+        }
+      }
+    }
+  }
+}

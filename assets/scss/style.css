@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,400,500,700,900&display=swap");
+#alert-box .discount {
+  background-color: #f6475f;
+  padding: 12px;
+}
+
+#alert-box .discount .discount-content {
+  font-family: "Roboto", sans-serif;
+}
+
+#alert-box .discount .discount-content span {
+  color: white;
+}
+
+#alert-box .discount .discount-content span a {
+  text-decoration: underline;
+  color: white;
+}
+
+#alert-box .discount .discount-content button {
+  float: none;
+  vertical-align: middle;
+  margin-left: 15px;
+  font-size: 30px;
+  padding: 0px;
+  margin-bottom: 4px;
+  font-family: inherit;
+}
+
+#top-nav .top-navigation {
+  background-color: #343a40;
+}
+
+#top-nav .top-navigation .contact {
+  padding: 12px;
+  margin-bottom: 0px;
+}
+
+#top-nav .top-navigation .contact li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#top-nav .top-navigation .contact li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#top-nav .top-navigation .contact li a i {
+  margin-right: 9px;
+}
+
+#top-nav .top-navigation .contact li a:hover {
+  color: #FFBC09;
+}
+
+#top-nav .top-navigation .contact li:last-child {
+  margin-left: 9px;
+}
+/*# sourceMappingURL=style.css.map */

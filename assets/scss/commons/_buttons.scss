@@ -1,0 +1,10 @@
+.btn {
+  background-color: $orange-color;
+  padding: 7px 15px;
+  color:white;
+&:hover{
+    background-color: $darken-orange-color;
+    color:white;
+}
+}
+

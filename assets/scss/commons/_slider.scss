@@ -1,0 +1,14 @@
+#corusel {
+  overflow: hidden;
+  #carouselExampleControls {
+    height: 400px;
+    .corusel-inner {
+      .corusel-item {
+          img{
+              width: 100%;
+              height:100%;
+          }
+      }
+    }
+  }
+}

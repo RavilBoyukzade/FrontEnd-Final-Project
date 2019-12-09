@@ -1,4 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,400,500,700,900&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  color: #292b2c;
+  font-family: "Rubik", sans-serif;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+p {
+  color: #888888;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 #alert-box .discount {
   background-color: #f6475f;
   padding: 12px;
@@ -37,6 +60,7 @@
 }
 
 #top-nav .top-navigation .contact li {
+  font-size: 14px;
   list-style-type: none;
   display: inline-block;
 }
@@ -59,5 +83,161 @@
 
 #top-nav .top-navigation .contact li:last-child {
   margin-left: 9px;
+}
+
+#top-nav .top-navigation span {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+#navigation-bar {
+  position: relative;
+}
+
+#navigation-bar .search-panel {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 15px;
+}
+
+#navigation-bar .search-panel .form-control {
+  border-right: none;
+}
+
+#navigation-bar .search-panel .input-group-append {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  font-size: 13px;
+  border-color: #ced4da;
+}
+
+#navigation-bar .search-panel .input-group-append a {
+  color: black;
+}
+
+#navigation-bar .navbar {
+  padding: 0px;
+}
+
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: #292b2c;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 25px 10px;
+  text-transform: uppercase;
+}
+
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #FFBC09;
+}
+
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .dropdown:after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
+
+#eduglobal {
+  background-color: #f7f7f7;
+}
+
+#eduglobal .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#eduglobal .row .intro {
+  text-align: center;
+}
+
+#eduglobal .card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#eduglobal .card:hover {
+  margin-top: -20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#eduglobal .card:hover .box-icon::before {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 0px;
+  opacity: 0;
+}
+
+#eduglobal .card .box-icon {
+  margin: 0 auto;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 105px;
+  position: relative;
+}
+
+#eduglobal .card .box-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  margin: 0px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
+#eduglobal .card .book {
+  background-color: #f6475f;
+}
+
+#eduglobal .card .globe {
+  background-color: #FFBC09;
+}
+
+#eduglobal .card .instructors {
+  background-color: #b3d36a;
+}
+
+.btn {
+  background-color: #FFBC09;
+  padding: 7px 15px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #DF9C00;
+  color: white;
+}
+
+#corusel {
+  overflow: hidden;
+}
+
+#corusel #carouselExampleControls {
+  height: 400px;
+}
+
+#corusel #carouselExampleControls .corusel-inner .corusel-item img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

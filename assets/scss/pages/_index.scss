@@ -78,6 +78,7 @@
     }
   }
   .navbar {
+    position: sticky;
     padding: 0px;
     .collapse {
       .navbar-nav {
@@ -105,6 +106,7 @@
   }
 }
 #eduglobal {
+  padding: 100px;
   background-color: #f7f7f7;
   .row {
     justify-content: center;
@@ -119,8 +121,8 @@
     &:hover {
       margin-top: -20px;
       @include transition(all 0.5s);
-      .box-icon::before{
-         position: absolute;
+      .box-icon::before {
+        position: absolute;
         left: 10px;
         top: 10px;
         bottom: 10px;

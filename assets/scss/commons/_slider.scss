@@ -1,13 +1,58 @@
 #corusel {
   overflow: hidden;
   #carouselExampleControls {
-    height: 400px;
-    .corusel-inner {
-      .corusel-item {
-          img{
-              width: 100%;
-              height:100%;
+    height: 470px;
+    .carousel-inner {
+      .carousel-item {
+        img {
+          margin-top: -100px;
+        }
+      }
+    }
+  }
+}
+#popular-categories {
+  .owl-carousel {
+    display: flex;
+    .owl-item {
+      width: 172.5px;
+      margin-right: 15px;
+      .item {
+        .categories {
+          a {
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            padding: 30px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            i {
+              display: block;
+              margin-bottom: 10px;
+              font-size: 30px;
+            }
           }
+          .green {
+            background-color: $succsess-color;
+          }
+          .orange {
+            background-color: $orange-color;
+          }
+          .violet {
+            background-color: $violet-color;
+          }
+          .blue {
+            background-color: $sea-color;
+          }
+          .dark-orange {
+            background-color: $dark-orange-color;
+          }
+          .danger{
+            background-color: $danger-color;
+          }
+        }
       }
     }
   }

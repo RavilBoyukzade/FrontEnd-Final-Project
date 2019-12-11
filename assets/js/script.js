@@ -24,4 +24,9 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 4
     });
+
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1000
+    });
 });

@@ -466,6 +466,103 @@ p {
   font-size: 20px;
 }
 
+#counter {
+  overflow: hidden;
+  position: relative;
+}
+
+#counter .counter-bg-img {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(7, 41, 77, 0.7);
+  position: relative;
+}
+
+#counter .counter-bg-img::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#counter .counter-bg-img img {
+  z-index: -1;
+  position: relative;
+  max-width: 100%;
+  border-style: none;
+  margin-top: -200px;
+}
+
+#counter .container {
+  position: absolute;
+  top: 50%;
+}
+
+#counter .container .row {
+  margin-left: 25%;
+}
+
+#counter .container .counter-body h3 {
+  color: #fff;
+}
+
+#counter .container .counter-body p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#upcoming {
+  padding: 100px;
+}
+
+#upcoming .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#upcoming .row .intro {
+  text-align: center;
+}
+
+#upcoming .card .card-img {
+  cursor: pointer;
+}
+
+#upcoming .card .card-body .card-inform h6 {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  cursor: pointer;
+}
+
+#upcoming .card .card-body .card-inform h6:hover {
+  color: #FFBC09;
+}
+
+#upcoming .card .card-body .card-inform .view {
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+
+#upcoming .card .card-body .card-inform .view li a {
+  text-decoration: none;
+  color: #FFBC09;
+}
+
+#upcoming .card .card-body .card-inform .card-text {
+  text-align: left;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

@@ -231,6 +231,38 @@
         border-style: none;
       }
     }
+    .play {
+      position: absolute;
+      right: 0;
+      display: table;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+      text-align: center;
+      .play-btn {
+        background-color: #ffffff;
+        border-radius: 100%;
+        color: #ffbc09;
+        position: relative;
+        display: inline-block;
+        margin-right: 25px;
+        line-height: 50px;
+        font-size: 18px !important;
+        vertical-align: middle;
+        margin-left: 0;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        .fa-play {
+          color: $orange-color;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
 #our-courses {
@@ -410,7 +442,7 @@
   }
   .card {
     border-radius: 10px;
-    margin-top:30px;
+    margin-top: 30px;
     .card-img {
       cursor: pointer;
       overflow: hidden;
@@ -481,5 +513,56 @@
         }
       }
     }
+  }
+}
+#online-courses {
+  overflow: hidden;
+  padding: 80px 0 0 0;
+  position: relative;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-color: $dark-blue-color;
+  margin-top: 100px;
+  .register-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 8%;
+    opacity: 1;
+    .register-heading {
+      color: white;
+      h2 {
+        color: white;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+        span {
+          color: #ffbc09 !important;
+        }
+      }
+    }
+    p {
+      color: white;
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-align: left;
+      font-weight: bold;
+    }
+    form {
+      .form-control {
+        background-color: transparent;
+        color: #fff;
+        border-color: #fff;
+        height: 47px;
+        padding: 10px 20px;
+        margin-top: 30px;
+      }
+      .message{
+        height:auto;
+        padding:10px 20px;
+      }
+    }
+  }
+  .img{
+    text-align: center;
   }
 }

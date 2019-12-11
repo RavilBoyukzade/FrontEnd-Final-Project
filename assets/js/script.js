@@ -22,7 +22,8 @@ $(document).ready(function () {
         arrows:false,
         infinite: true,
         slidesToShow: 6,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        autoplay:true
     });
 
     $(".counter").counterUp({

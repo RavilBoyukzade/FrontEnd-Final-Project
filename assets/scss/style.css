@@ -454,6 +454,18 @@ p {
   border-radius: 0.25rem;
 }
 
+#our-courses .all-courses {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#our-courses .all-courses a span {
+  font-size: 20px;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;
@@ -482,8 +494,12 @@ p {
 }
 
 .btn:hover:before {
-  -webkit-transform: skewX(-45deg) translateX(10em);
-          transform: skewX(-45deg) translateX(10em);
+  -webkit-transform: skewX(-45deg) translateX(20em);
+          transform: skewX(-45deg) translateX(20em);
+}
+
+.btn-lg {
+  padding: 12px 30px;
 }
 
 #corusel {
@@ -507,6 +523,10 @@ p {
 #popular-categories .owl-carousel .owl-item {
   width: 172.5px;
   margin-right: 15px;
+}
+
+#popular-categories .owl-carousel .owl-item .item .categories {
+  margin-right: 10px;
 }
 
 #popular-categories .owl-carousel .owl-item .item .categories a {

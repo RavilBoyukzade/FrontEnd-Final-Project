@@ -18,9 +18,10 @@ $(document).ready(function () {
         }
     });
 
-    // $('.owl-carousel').slick({
-    //     infinite: true,
-    //     slidesToShow: 6,
-    //     slidesToScroll: 4
-    // });
+    $('.owl-carousel').slick({
+        arrows:false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 4
+    });
 });

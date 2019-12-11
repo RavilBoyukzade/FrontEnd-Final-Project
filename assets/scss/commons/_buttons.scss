@@ -20,7 +20,10 @@
     background-color: $darken-orange-color;
     color: white;
     &:before {
-      transform: skewX(-45deg) translateX(10em);
+      transform: skewX(-45deg) translateX(20em);
     }
   }
+}
+.btn-lg{
+  padding:12px 30px;
 }

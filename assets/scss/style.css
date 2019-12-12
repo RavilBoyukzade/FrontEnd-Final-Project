@@ -786,6 +786,53 @@ p {
   border-radius: 10px;
 }
 
+#our-teachers {
+  background-image: url("../img/teacher_bg.jpg");
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#our-teachers:before {
+  background-color: rgba(7, 41, 77, 0.9);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#our-teachers .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#our-teachers .row .intro {
+  text-align: center;
+}
+
+#our-teachers .row .intro h2 {
+  color: white;
+}
+
+#our-teachers .row .intro p {
+  color: white;
+}
+
+#our-teachers .card {
+  border: 0px;
+}
+
+#our-teachers .card .card-body {
+  text-align: center;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

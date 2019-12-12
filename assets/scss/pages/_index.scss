@@ -592,7 +592,7 @@
       }
     }
   }
-  .active{
+  .active {
     background-color: $orange-color;
     color: white;
   }
@@ -626,6 +626,43 @@
       img {
         border-radius: 10px;
       }
+    }
+  }
+}
+#our-teachers {
+  background-image: url("../img/teacher_bg.jpg");
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:before {
+    background-color: rgba(7, 41, 77, 0.9);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .row {
+    justify-content: center;
+    .intro {
+      text-align: center;
+      h2 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+  .card{
+    border:0px;
+    .card-body{
+      text-align: center;
     }
   }
 }

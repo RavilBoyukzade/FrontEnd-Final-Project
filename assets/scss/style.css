@@ -902,6 +902,139 @@ p {
   text-align: left;
 }
 
+#blog {
+  padding: 100px;
+  background-color: #f7f7f7;
+}
+
+#blog .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#blog .row .intro {
+  text-align: center;
+}
+
+#blog .card {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#blog .card .card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+#blog .card .card-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#blog .card .card-body {
+  padding: 16px;
+}
+
+#blog .card .card-body .card-txt .card-inform {
+  text-align: left;
+}
+
+#blog .card .card-body .card-txt .card-inform h6 a {
+  text-decoration: none;
+  color: #292b2c;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#blog .card .card-body .card-txt .card-inform h6 a:hover {
+  color: #FFBC09;
+}
+
+#blog .card .card-body .card-txt .card-inform p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#blog .card .card-body .card-txt .card-inform a {
+  text-decoration: none;
+  color: #292b2c;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#blog .card .card-body .card-txt .card-inform a:hover {
+  color: #FFBC09;
+}
+
+#blog .card .card-footer {
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  line-height: normal;
+  background-color: white;
+}
+
+#blog .card .card-footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin-bottom: 0;
+}
+
+#blog .card .card-footer ul li {
+  color: #292b2c;
+}
+
+#blog .card .card-footer ul li a {
+  text-decoration: none;
+  color: #888888;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#blog .card .card-footer ul li a:hover {
+  color: #FFBC09;
+}
+
+#blog .card .card-footer ul li a i {
+  color: #FFBC09;
+  margin-right: 5px;
+}
+
+#blog .card .card-footer ul li:first-child {
+  margin-right: 10px;
+}
+
+#blog .all-blog {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#blog .all-blog a span {
+  font-size: 20px;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

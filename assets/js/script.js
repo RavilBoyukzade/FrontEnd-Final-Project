@@ -54,5 +54,13 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true
     });
+// our client corusel
+    $('.client-owl-carousel').slick({
+        arrows: false,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true
+    });
 
 });

@@ -1035,6 +1035,24 @@ p {
   font-size: 20px;
 }
 
+#our-client {
+  padding: 100px;
+}
+
+#our-client .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#our-client .row .intro {
+  text-align: center;
+}
+
+#our-client .client-owl-carousel {
+  margin-top: 50px;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

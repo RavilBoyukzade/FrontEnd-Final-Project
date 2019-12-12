@@ -833,3 +833,15 @@
     }
   }
 }
+#our-client{
+  padding:100px;
+  .row {
+    justify-content: center;
+    .intro {
+      text-align: center;
+    }
+  }
+  .client-owl-carousel{
+    margin-top: 50px;
+  }
+}

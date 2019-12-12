@@ -46,5 +46,13 @@ $(document).ready(function () {
         });
         return false;
     });
+    // student say corusel
+    $('.student-owl-carousel').slick({
+        arrows: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true
+    });
 
 });

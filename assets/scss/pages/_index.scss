@@ -659,10 +659,72 @@
       }
     }
   }
-  .card{
-    border:0px;
-    .card-body{
+  .card {
+    border: 0px;
+    .card-body {
       text-align: center;
+    }
+  }
+}
+#student-say {
+  padding: 100px;
+  .row {
+    justify-content: center;
+    .intro {
+      text-align: center;
+    }
+  }
+  .student-owl-carousel {
+    .student-owl-item {
+      .item {
+        .box {
+          background-color: #fff;
+          box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          padding: 15px 30px 15px 50px;
+          margin: 5px 5px 5px 50px;
+          position: relative;
+          z-index: 1;
+          &:before {
+            content: "\f10e";
+            position: absolute;
+            right: 40px;
+            top: 0;
+            font-family: "Font Awesome 5 Pro";
+            font-size: 190px;
+            line-height: normal;
+            font-weight: 900;
+            z-index: -1;
+            color: rgba(0, 0, 0, 0.02);
+          }
+          .box-image {
+            margin-right: 20px;
+            margin-left: -100px;
+            position: absolute;
+            img{
+              border-radius: 5px;
+            }
+          }
+          .box-content {
+            overflow: hidden;
+            .user-name {
+              text-align: left;
+              h6 {
+                margin-bottom: 8px;
+              }
+              span {
+                font-style: italic;
+                color: $orange-color;
+              }
+            }
+            .user-comment {
+              p {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

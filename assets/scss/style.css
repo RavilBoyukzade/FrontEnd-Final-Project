@@ -833,6 +833,75 @@ p {
   text-align: center;
 }
 
+#student-say {
+  padding: 100px;
+}
+
+#student-say .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#student-say .row .intro {
+  text-align: center;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px 30px 15px 50px;
+  margin: 5px 5px 5px 50px;
+  position: relative;
+  z-index: 1;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box:before {
+  content: "\f10e";
+  position: absolute;
+  right: 40px;
+  top: 0;
+  font-family: "Font Awesome 5 Pro";
+  font-size: 190px;
+  line-height: normal;
+  font-weight: 900;
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.02);
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-image {
+  margin-right: 20px;
+  margin-left: -100px;
+  position: absolute;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-image img {
+  border-radius: 5px;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-content {
+  overflow: hidden;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name {
+  text-align: left;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name h6 {
+  margin-bottom: 8px;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name span {
+  font-style: italic;
+  color: #FFBC09;
+}
+
+#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment p {
+  text-align: left;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

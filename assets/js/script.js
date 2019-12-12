@@ -10,7 +10,6 @@ $(document).ready(function () {
 // scroll to nav bar fix
     $(window).on('scroll' ,function () {
         var scroll = $(window).scrollTop();
-        console.log(scroll);
         if(scroll >= 100){
             $("nav").addClass("nav-fix");
         }
@@ -61,6 +60,16 @@ $(document).ready(function () {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true
+    });
+
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+            $(".scrollup").removeClass("d-none");
+        }
+        else {
+            $(".scrollup").addClass("d-none");
+        }
     });
 
 });

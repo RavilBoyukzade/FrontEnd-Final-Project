@@ -747,6 +747,45 @@ p {
   text-decoration: none;
 }
 
+#our-gallery .active {
+  background-color: #FFBC09;
+  color: white;
+}
+
+#our-gallery .row {
+  padding: 0;
+}
+
+#our-gallery .gallery-item {
+  width: 100%;
+}
+
+#our-gallery .gallery-item:hover:before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+#our-gallery .gallery-item .item {
+  float: left;
+  margin: 10px 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#our-gallery .gallery-item .item img {
+  border-radius: 10px;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

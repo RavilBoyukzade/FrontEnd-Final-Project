@@ -714,6 +714,39 @@ p {
           animation-delay: 0.03s;
 }
 
+#our-gallery {
+  padding: 100px;
+}
+
+#our-gallery .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#our-gallery .row .intro {
+  text-align: center;
+}
+
+#our-gallery .buttons ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
+}
+
+#our-gallery .buttons ul li {
+  margin: 0 10px;
+}
+
+#our-gallery .buttons ul li a {
+  text-decoration: none;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;
@@ -748,6 +781,24 @@ p {
 
 .btn-lg {
   padding: 12px 30px;
+}
+
+.btn-prim {
+  background-color: #eee;
+  padding: 5px 25px;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: #292b2c;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.btn-prim:hover {
+  background-color: #FFBC09;
+  color: white;
 }
 
 #corusel {

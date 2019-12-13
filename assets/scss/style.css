@@ -263,6 +263,7 @@ p {
 
 #about-us {
   overflow: hidden;
+  padding: 100px 0;
 }
 
 #about-us .container-fluid .about {
@@ -1347,6 +1348,59 @@ p {
 
 .scrollup i {
   color: white;
+}
+
+#about-us-head {
+  background-image: url(../img/about_bg.jpg);
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#about-us-head:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#about-us-head h2 {
+  color: white;
+}
+
+#about-us-head .links {
+  margin-top: 25px;
+  margin-left: 379px;
+}
+
+#about-us-head .links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about-us-head .links ul li {
+  color: white;
+  padding: 3px;
+}
+
+#about-us-head .links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#about-us-head .links ul li a:hover {
+  color: #FFBC09;
 }
 
 .btn {

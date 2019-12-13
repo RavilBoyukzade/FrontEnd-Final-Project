@@ -782,30 +782,41 @@ p {
   width: 100%;
 }
 
-#our-gallery .gallery-item:hover:before {
-  background-color: rgba(0, 0, 0, 0.6);
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  top: 0;
-  bottom: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  z-index: 2;
-}
-
-#our-gallery .gallery-item .item {
+#our-gallery .item {
   float: left;
   margin: 10px 10px;
   z-index: 1;
   cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  background-color: black;
 }
 
-#our-gallery .gallery-item .item img {
+#our-gallery .item img {
   border-radius: 10px;
+  position: relative;
+}
+
+#our-gallery .item img:hover {
+  opacity: 0.7;
+}
+
+#our-gallery .item .gallery-title {
+  position: absolute;
+  top: 32%;
+  right: 97px;
+}
+
+#our-gallery .item .gallery-title .image-icon {
+  margin-left: 27px;
+}
+
+#our-gallery .item .gallery-title h5 {
+  color: white;
+  margin-right: 24px;
+  margin-top: 10px;
 }
 
 #our-teachers {
@@ -1506,6 +1517,178 @@ p {
   background-color: #fff;
   border-color: #dee2e6;
   color: #888888;
+}
+
+#courses-detail-head {
+  background-image: url(../img/about_bg.jpg);
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#courses-detail-head:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#courses-detail-head h2 {
+  color: white;
+}
+
+#courses-detail-head .links {
+  margin-top: 25px;
+  margin-left: 372px;
+}
+
+#courses-detail-head .links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#courses-detail-head .links ul li {
+  color: white;
+  padding: 3px;
+}
+
+#courses-detail-head .links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#courses-detail-head .links ul li a:hover {
+  color: #FFBC09;
+}
+
+#detail {
+  padding: 100px;
+}
+
+#detail .course .course-img {
+  position: relative;
+}
+
+#detail .course .course-img a img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#detail .course .price .free {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #c3e6cb;
+  color: #165825;
+  background-color: #d4edda;
+  padding: 5px 15px;
+  margin: 0px;
+  border-radius: 0.25rem;
+}
+
+#detail .course .enroll a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#detail .course .course-detail {
+  background-color: #fff3cd;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#detail .course .course-detail .detail-title {
+  border-bottom: 1px solid #dad1b9;
+  margin-bottom: 15px;
+}
+
+#detail .course .course-detail .detail-title h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#detail .course .course-detail .detail-content ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#detail .course .course-detail .detail-content ul li {
+  float: left;
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid #dad1b9;
+}
+
+#detail .course .course-detail .detail-content ul li .content img {
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+  max-width: 50px;
+  width: 100%;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info {
+  overflow: hidden;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info span {
+  display: block !important;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info a {
+  color: #292b2c;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info a:hover {
+  color: #FFBC09;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info ul li {
+  border-right: 0 solid #dad1b9;
+  padding: 0;
+  margin: 2px;
+}
+
+#detail .course .course-detail .detail-content ul li .content .info ul li i {
+  color: #FFBC09;
+  font-size: 12px;
+}
+
+#detail .course .course-detail .detail-content ul li:last-child {
+  border-right: 0 solid #dad1b9;
 }
 
 .btn {

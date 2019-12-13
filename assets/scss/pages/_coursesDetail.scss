@@ -1,0 +1,149 @@
+#courses-detail-head {
+  background-image: url(../img/about_bg.jpg);
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h2 {
+    color: white;
+  }
+  .links {
+    margin-top: 25px;
+    margin-left: 372px;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      li {
+        color: white;
+        padding: 3px;
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: $orange-color;
+          }
+        }
+      }
+    }
+  }
+}
+#detail {
+  padding: 100px;
+  .course {
+    .course-img {
+      position: relative;
+      a {
+        img {
+          max-width: 100%;
+          vertical-align: middle;
+          border-style: none;
+        }
+      }
+    }
+    .price {
+      .free {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        border: 1px solid #c3e6cb;
+        color: $dark-success-color;
+        background-color: $light-succsess-color;
+        padding: 5px 15px;
+        margin: 0px;
+        border-radius: 0.25rem;
+      }
+    }
+    .enroll {
+      a {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+    .course-detail {
+      background-color: #fff3cd;
+      padding: 20px;
+      margin-bottom: 40px;
+      .detail-title {
+        border-bottom: 1px solid #dad1b9;
+        margin-bottom: 15px;
+        h2 {
+          font-size: 24px;
+          margin-top: 0;
+        }
+      }
+      .detail-content {
+        ul {
+          list-style-type: none;
+          display: flex;
+          padding: 0;
+          margin: 0;
+          li {
+            float: left;
+            padding-right: 15px;
+            margin-right: 15px;
+            border-right: 1px solid #dad1b9;
+            .content {
+              img {
+                border-radius: 5px;
+                float: left;
+                margin-right: 10px;
+                max-width: 50px;
+                width: 100%;
+              }
+              .info {
+                overflow: hidden;
+                span {
+                  display: block !important;
+                  font-weight: bold;
+                  color: #333;
+                  margin: 0;
+                }
+                a {
+                  color: #292b2c;
+                  text-decoration: none;
+                  @include transition(all 0.5s);
+                  &:hover {
+                    color: $orange-color;
+                  }
+                }
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding:0;
+                    margin:0;
+                    li{
+                         border-right:0 solid #dad1b9;
+                         padding: 0;
+                         margin: 2px;
+                        i{
+                            color: $orange-color;
+                            font-size: 12px;
+                        }
+                    }
+                }
+              }
+            }
+            &:last-child{
+                border-right:0 solid #dad1b9;
+            }
+          }
+        }
+      }
+    }
+  }
+}

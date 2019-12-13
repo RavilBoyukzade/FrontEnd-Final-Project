@@ -17,6 +17,8 @@ $(document).ready(function () {
             $("nav").removeClass("nav-fix");
         }
     });
+
+   
 // carousel
     $('.owl-carousel').slick({
         arrows:false,

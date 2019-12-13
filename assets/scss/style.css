@@ -122,6 +122,27 @@ p {
   padding: 0px;
 }
 
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .search-menu {
+  margin-left: -140px;
+  z-index: 1;
+  padding: 8px;
+  width: 200px;
+}
+
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .search-menu input {
+  position: relative;
+}
+
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .search-menu a {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+#navigation-bar .navbar .collapse .navbar-nav .nav-item .search-menu a i {
+  color: black;
+}
+
 #navigation-bar .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: #292b2c;
   font-size: 14px;

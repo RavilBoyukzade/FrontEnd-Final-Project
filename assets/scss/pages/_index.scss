@@ -83,6 +83,23 @@
     .collapse {
       .navbar-nav {
         .nav-item {
+          .search-menu {
+            margin-left: -140px;
+            z-index: 1;
+            padding: 8px;
+            width: 200px;
+            input {
+              position: relative;
+            }
+            a {
+              position: absolute;
+              top: 7px;
+              right: 7px;
+              i{
+                color: black;
+              }
+            }
+          }
           .nav-link {
             color: #292b2c;
             font-size: 14px;
@@ -1036,7 +1053,7 @@
           display: inline-block;
           text-align: center;
           @include transition(all 0.5s);
-          &:hover{
+          &:hover {
             color: $orange-color;
           }
         }
@@ -1044,47 +1061,46 @@
     }
   }
 }
-#footer-bottom{
+#footer-bottom {
   background-color: #202325;
   padding: 30px 0;
-  p{
+  p {
     color: white;
     font-size: 14px;
   }
-  ul{
+  ul {
     list-style-type: none;
-   text-align: right!important;
-   padding: 0;
-   margin: 0;
-    li{
+    text-align: right !important;
+    padding: 0;
+    margin: 0;
+    li {
       display: inline-block;
-    position: relative;
-    justify-content: center;
-}
-      a{ 
-        color:white;
-        text-decoration: none;
-        font-size: 14px;
-        
-      }
+      position: relative;
+      justify-content: center;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
     }
   }
+}
 
 // footer section end
-.scrollup{
-      background-color: #2f2f2f;
-    border-radius: 100%;
-    bottom: 20px;
-    color: #ffffff;
-    font-size: 24px;
-    height: 40px;
-    line-height: 38px;
-    position: fixed;
-    right: 20px;
-    text-align: center;
-    width: 40px;
-    z-index: 99;
-    i{
-      color:white;
-    }
+.scrollup {
+  background-color: #2f2f2f;
+  border-radius: 100%;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 24px;
+  height: 40px;
+  line-height: 38px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 99;
+  i {
+    color: white;
+  }
 }

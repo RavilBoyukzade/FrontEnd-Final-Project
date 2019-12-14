@@ -41,4 +41,26 @@
     }
   }
 }
+#counter-bg-gray {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  .container {
+    .counter-body {
+      h3 {
+        color: black;
+      }
+      p {
+        display: flex;
+        color: black;
+        justify-content: center;
+      }
+    }
+  }
+}
 

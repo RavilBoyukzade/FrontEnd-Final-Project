@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SITE TITE -->
     <title>Courses | Eduglobal - Education & Courses HTML Template</title>
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- TITLE IMAGE -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/title.png">
     <!-- BOOTSTRAP CSS -->
@@ -255,7 +257,7 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="course">
-                            <div class="course-img">
+                            <div class="course-img" data-aos="fade-up">
                                 <a href="#">
                                     <img src="assets/img/course_img_big.jpg" alt="">
                                 </a>
@@ -266,7 +268,7 @@
                                     <a href="#" class="btn">Get Enroll</a>
                                 </div>
                             </div>
-                            <div class="course-detail">
+                            <div class="course-detail" data-aos="fade-up">
                                 <div class="detail-title">
                                     <h2>Nullam id varius nunc id varius nunc</h2>
                                 </div>
@@ -316,127 +318,265 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="course-nav-tab">
-                                <div class="card text-center">
-                                    <div class="card-header">
-                                        <ul class="nav nav-tabs card-header-tabs">
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="#">Overview</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="#">Curiculum</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="#">Instructor</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Reviews</a>
-                                            </li>
-                                        </ul>
+                            <div class="course-info-tabs" data-aos="fade-up">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="overview-tab1" data-toggle="tab" href="#overview" role="tab"
+                                            aria-controls="overview" aria-selected="true">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="curriculum-tab1" data-toggle="tab" href="#curriculum" role="tab"
+                                            aria-controls="curriculum" aria-selected="false">Curriculum</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="instructor-tab1" data-toggle="tab" href="#instructor" role="tab"
+                                            aria-controls="instructor" aria-selected="false">Instructor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="reviews-tab1" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
+                                            aria-selected="false">Reviews</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active show text-left" id="overview" role="tabpanel" aria-labelledby="overview-tab1">
+                                        <div class="content-text">
+                                            <p>Lorem Ipsu. is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting. It was
+                                                popularised in the 1960s with the release of Letraset sheets containing
+                                                Lorem Ipsum passages, and more recently with desktop publishing software
+                                                like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
                                     </div>
-                                    <div class="card-body d-none" id="overview">
-                                        <p class="card-text text-left">Lorem Ipsu. is simply dummy text of the printing
-                                            and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard
-                                            dummy text ever since the 1500s when an unknown printer took a galley of
-                                            type and scrambled it to make a type specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic typesetting. It was popularised in the
-                                            1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                            and more recently with desktop publishing
-                                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-
-                                    </div>
-                                    <div class="card-body d-none" id="curiculum">
-                                        <div class="accordion" id="accordionExample">
+                                    <div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab1">
+                                        <div id="accordion" class="accordion">
                                             <div class="card">
-                                                <div class="card-header" id="headingOne">
-                                                    <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseOne"
-                                                            aria-expanded="true" aria-controls="collapseOne">
-                                                            Collapsible Group Item #1
-                                                        </button>
-                                                    </h2>
+                                                <div class="card-header" id="heading-1-One">
+                                                    <h6 class="mb-0"> <a data-toggle="collapse" href="#collapse-1-One" aria-expanded="true"
+                                                            aria-controls="collapse-1-One">Leap
+                                                            into electronic typesetting <span class="item_time">30
+                                                                min</span></a></h6>
                                                 </div>
-
-                                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body text-left">
-                                                        Lorem Ipsu. is simply dummy text of the printing and typesetting
-                                                        industry. Lorem Ipsum has been the industry's standard
-                                                        dummy text ever since the 1500s when an unknown printer took a
-                                                        galley of type and scrambled it to make a type specimen
-                                                        book.
+                                                <div id="collapse-1-One" class="collapse show" aria-labelledby="heading-1-One"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <p>Lorem Ipsu. is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text ever since the 1500s when an unknown
+                                                            printer took a galley of type and scrambled it to make a
+                                                            type specimen book.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="headingTwo">
-                                                    <h2 class="mb-0">
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                            data-toggle="collapse" data-target="#collapseTwo"
-                                                            aria-expanded="false" aria-controls="collapseTwo">
-                                                            Collapsible Group Item #2
-                                                        </button>
-                                                    </h2>
+                                                <div class="card-header" id="heading-1-Two">
+                                                    <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-1-Two"
+                                                            aria-expanded="false" aria-controls="collapse-1-Two">Letraset sheets containing
+                                                            <span class="item_time">30 min</span></a> </h6>
                                                 </div>
-                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body text-left">
-                                                        Lorem Ipsu. is simply dummy text of the printing and typesetting
-                                                        industry. Lorem Ipsum has been the industry's standard
-                                                        dummy text ever since the 1500s when an unknown printer took a
-                                                        galley of type and scrambled it to make a type specimen
-                                                        book.
+                                                <div id="collapse-1-Two" class="collapse" aria-labelledby="heading-1-Two" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <p>Lorem Ipsu. is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text ever since the 1500s when an unknown
+                                                            printer took a galley of type and scrambled it to make a
+                                                            type specimen book.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="headingThree">
-                                                    <h2 class="mb-0">
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                            data-toggle="collapse" data-target="#collapseThree"
-                                                            aria-expanded="false" aria-controls="collapseThree">
-                                                            Collapsible Group Item #3
-                                                        </button>
-                                                    </h2>
+                                                <div class="card-header" id="heading-1-Three">
+                                                    <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-1-Three"
+                                                            aria-expanded="false" aria-controls="collapse-1-Three">took a galley of type <span
+                                                                class="item_time">45 min</span></a> </h6>
                                                 </div>
-                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body text-left">
-                                                        Lorem Ipsu. is simply dummy text of the printing and typesetting
-                                                        industry. Lorem Ipsum has been the industry's standard
-                                                        dummy text ever since the 1500s when an unknown printer took a
-                                                        galley of type and scrambled it to make a type specimen
-                                                        book.
+                                                <div id="collapse-1-Three" class="collapse" aria-labelledby="heading-1-Three"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <p>Lorem Ipsu. is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text ever since the 1500s when an unknown
+                                                            printer took a galley of type and scrambled it to make a
+                                                            type specimen book.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
-                                    <div class="card-body " id="instructor">
-                                        <div class="card-body d-none" id="overview">
-                                            <p class="card-text text-left">Lorem Ipsu. is simply dummy text of the printing
-                                                and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard
-                                                dummy text ever since the 1500s when an unknown printer took a galley of
-                                                type and scrambled it to make a type specimen
-                                                book. It has survived not only five centuries, but also the leap into
-                                                electronic typesetting. It was popularised in the
-                                                1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                                and more recently with desktop publishing
-                                                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab1">
+                                        <div class="course_author">
+                                            <div class="author_img">
+                                                <img class="img-fluid" src="assets/img/client_img1.jpg" alt="client_img1">
+                                            </div>
+                                            <div class="author_meta">
+                                                <div class="author_intro">
+                                                    <h6>Alia Noor</h6>
+                                                    <span class="text_default">Co-Founder</span>
+                                                </div>
+                                                <div class="author_desc mt-1">
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                        accusantium doloremque laudantium, quaeillo inventore veritatis
+                                                        et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    
-                                    
+                                    </div>
+                                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab1">
+                                        <div class="p-3 border">
+                                            <div class="course_rating">
+                                                <div class="rating_review">
+                                                    <p><span class="review_number">4.50</span> average based on 2
+                                                        ratings</p>
+                                                    <div class="rating_stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="rating_box">
+                                                    <div class="course_rate">
+                                                        <span>5 Star</span>
+                                                        <div class="review_bar">
+                                                            <div class="rating" style="width:90% "></div>
+                                                        </div>
+                                                        <span>90%</span>
+                                                    </div>
+                                                    <div class="course_rate">
+                                                        <span>4 Star</span>
+                                                        <div class="review_bar">
+                                                            <div class="rating" style="width:70% "></div>
+                                                        </div>
+                                                        <span>70%</span>
+                                                    </div>
+                                                    <div class="course_rate">
+                                                        <span>3 Star</span>
+                                                        <div class="review_bar">
+                                                            <div class="rating" style="width:40% "></div>
+                                                        </div>
+                                                        <span>40%</span>
+                                                    </div>
+                                                    <div class="course_rate">
+                                                        <span>2 Star</span>
+                                                        <div class="review_bar">
+                                                            <div class="rating" style="width:20% "></div>
+                                                        </div>
+                                                        <span>20%</span>
+                                                    </div>
+                                                    <div class="course_rate">
+                                                        <span>1 Star</span>
+                                                        <div class="review_bar">
+                                                            <div class="rating" style="width:10% "></div>
+                                                        </div>
+                                                        <span>10%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading_s1">
+                                                <h5>Reviews</h5>
+                                            </div>
+                                            <ul class="list_none comment_list">
+                                                <li class="comment_info">
+                                                    <div class="d-flex">
+                                                        <div class="user_img">
+                                                            <img class="" src="assets/img/client_img1.jpg" alt="client_img1">
+                                                        </div>
+                                                        <div class="comment_content">
+                                                            <div class="d-sm-flex align-items-center ">
+                                                                <div class="meta_data">
+                                                                    <h6><a href="#">Alia Noor</a></h6>
+                                                                    <span class="comment-time">March 5, 2018, 6:05
+                                                                        PM</span>
+                                                                </div>
+                                                                <div class="ml-auto mb-2">
+                                                                    <div class="rating_stars">
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star-half"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>We denounce with righteous indignation and dislike men
+                                                                who are so beguiled and demoralized by the charms of
+                                                                pleasure of the moment, so blinded by desire that the
+                                                                cannot foresee the pain and trouble that.</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="comment_info">
+                                                    <div class="d-flex">
+                                                        <div class="user_img">
+                                                            <img class="radius_all_5" src="assets/img/client_img2.jpg" alt="client_img2">
+                                                        </div>
+                                                        <div class="comment_content">
+                                                            <div class="d-sm-flex align-items-center">
+                                                                <div class="meta_data">
+                                                                    <h6><a href="#">Dany Core</a></h6>
+                                                                    <span class="comment-time">april 15, 2018, 10:30
+                                                                        PM</span>
+                                                                </div>
+                                                                <div class="ml-auto mb-2">
+                                                                    <div class="rating_stars">
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star"></i>
+                                                                        <i class="ion-android-star-half"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>We denounce with righteous indignation and dislike men
+                                                                who are so beguiled and demoralized by the charms of
+                                                                pleasure of the moment, so blinded by desire that the
+                                                                cannot foresee the pain and trouble that.</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <div class="review_form field_form">
+                                                <h5>Add a review</h5>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="form-group col-12">
+                                                            <div class="rating">
+                                                                <span data-value="1"><i class="far fa-star"></i></span>
+                                                                <span data-value="2"><i class="far fa-star"></i></i></i></span>
+                                                                <span data-value="3"><i class="far fa-star "></i></span>
+                                                                <span data-value="4"><i class="far fa-star"></i></span>
+                                                                <span data-value="5"><i class="far fa-star"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-12">
+                                                            <textarea required="required" placeholder="Your review *" class="form-control"
+                                                                name="message" rows="4"></textarea>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input required="required" placeholder="Enter Name *" class="form-control" name="name"
+                                                                type="text">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <input required="required" placeholder="Enter Email *" class="form-control" name="email"
+                                                                type="email">
+                                                        </div>
+                            
+                                                        <div class="form-group col-12">
+                                                            <button type="submit" class="btn btn-default bg_default p-2" name="submit"
+                                                                value="Submit">Submit Review</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row" data-aos="fade-up">
                                 <div class="col-lg-6">
                                     <div class="card">
                                         <div class="card-img">
@@ -554,7 +694,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3 mt-lg-0 mt-4 pt-3 pt-lg-0">
+                        <div class="sidebar">
+                            <div class="search">
+                                <form class="search_form">
+                                    <input required="" class="form-control" placeholder="Search..." type="text">
+                                    <a href="#" type="submit" title="Subscribe" name="submit" value="Submit">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <div class="latest-course">
+                                <h5>
+                                    Letest Course
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -735,6 +891,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

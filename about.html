@@ -9,6 +9,8 @@
     <title>About Us | Eduglobal - Education & Courses HTML Template</title>
     <!-- TITLE IMAGE -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/title.png">
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- FONTAWESOME -->
@@ -254,7 +256,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="intro">
+                        <div class="intro" data-aos="fade-up">
                             <h2>Why Choose Eduglobal</h2>
                             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
                                 anything
@@ -264,7 +266,7 @@
 
                     </div>
 
-                    <div class="row mt-4">
+                    <div class="row mt-4" data-aos="fade-up">
                         <div class="col-lg-4">
                             <div class="card">
                                 <div class="box-icon book">
@@ -315,7 +317,7 @@
         <section id="about-us">
             <div class="container-fluid p-0">
                 <div class="row no-gutters align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <div class="about align-middle">
                             <h2>About Us</h2>
                             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
@@ -354,7 +356,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="video">
                             <img src="assets/img/about_img.jpg" class="w-100" alt="">
                         </div>
@@ -372,7 +374,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="intro">
+                        <div class="intro" data-aos="fade-up">
                             <h2>Our Gallery</h2>
                             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
                                 anything embarrassing hidden in the
@@ -382,10 +384,17 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-lg-3">
                         <div class="card">
                             <img src="assets/img/team_img1.jpg" class="card-img-top" alt="teacher1">
+                            <ul class="teacher-contact">
+                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
                             <div class="card-body">
                                 <h5 class="card-title">Aden Smith</h5>
                                 <p class="card-text">Head Of Department</p>
@@ -395,6 +404,13 @@
                     <div class="col-lg-3">
                         <div class="card">
                             <img src="assets/img/team_img2.jpg" class="card-img-top" alt="teacher2">
+                            <ul class="teacher-contact">
+                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
                             <div class="card-body">
                                 <h5 class="card-title">Aden Smith</h5>
                                 <p class="card-text">Head Of Department</p>
@@ -404,6 +420,13 @@
                     <div class="col-lg-3">
                         <div class="card">
                             <img src="assets/img/team_img3.jpg" class="card-img-top" alt="teacher3">
+                            <ul class="teacher-contact">
+                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
                             <div class="card-body">
                                 <h5 class="card-title">Aden Smith</h5>
                                 <p class="card-text">Head Of Department</p>
@@ -413,6 +436,13 @@
                     <div class="col-lg-3">
                         <div class="card">
                             <img src="assets/img/team_img4.jpg" class="card-img-top" alt="teacher4">
+                            <ul class="teacher-contact">
+                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
                             <div class="card-body">
                                 <h5 class="card-title">Aden Smith</h5>
                                 <p class="card-text">Head Of Department</p>
@@ -425,50 +455,48 @@
         </section>
         <!-- OUR TEACHERS SECTION END -->
         <!-- COUNTER SECTION START -->
-        <section id="counter">
-            <div class="counter-bg-img">
-                <img src="assets/img/counter_bg.jpg" alt="counter background"></div>
+        <section id="counter-bg-gray">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 text-center">
                         <div class="counter-head">
-                            <img src="assets/img/counter_icon1.png" alt="">
+                            <img src="assets/img/counter_icon_dark1.png" alt="">
                         </div>
                         <div class="counter-body">
                             <h3><span class="counter">1800</span>+</h3>
                             <p>Students</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 text-center">
                         <div class="counter-head">
-                            <img src="assets/img/counter_icon2.png" alt="">
+                            <img src="assets/img/counter_icon_dark2.png" alt="">
                         </div>
                         <div class="counter-body">
                             <h3><span class="counter">70</span>+</h3>
-                            <p>Students</p>
+                            <p>Courses</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 text-center">
                         <div class="counter-head">
-                            <img src="assets/img/counter_icon3.png" alt="">
+                            <img src="assets/img/counter_icon_dark3.png" alt="">
                         </div>
                         <div class="counter-body">
                             <h3><span class="counter">700</span>+</h3>
-                            <p>Students</p>
+                            <p>Certified Teachers</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 text-center">
                         <div class="counter-head">
-                            <img src="assets/img/counter_icon4.png" alt="">
+                            <img src="assets/img/counter_icon_dark4.png" alt="">
                         </div>
                         <div class="counter-body">
                             <h3><span class="counter">1200</span>+</h3>
-                            <p>Students</p>
+                            <p>Award Winning</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+        
         </section>
         <!-- COUNTER SECTION END -->
         <!-- STUDENT SAY SECTION START -->
@@ -476,7 +504,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="intro">
+                        <div class="intro" data-aos="fade-up">
                             <h2>Student Say!</h2>
                             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
                                 anything embarrassing hidden in the
@@ -484,7 +512,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-lg-12">
                         <div class="student-owl-carousel">
                             <div class="student-owl-item">
@@ -580,7 +608,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="txt">
+                        <div class="txt" data-aos="fade-up">
 
                             <h2>Get The Coaching Training Today!</h2>
 
@@ -749,6 +777,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

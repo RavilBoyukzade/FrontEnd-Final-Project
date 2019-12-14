@@ -1,135 +1,132 @@
 #carusel-slide {
+  position: relative;
+  max-width: 100%;
+
+  .carousel-item {
+    height: 470px;
     position: relative;
     max-width: 100%;
 
-    .carousel-item {
-        height: 470px;
-        position: relative;
-        max-width: 100%;
-        
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 470px;
+      width: 100%;
+      background-color: black;
+      opacity: 0.5;
+    }
 
-        &::before {
-            content: " ";
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 470px;
-            width: 100%;
-            background-color: black;
-            opacity: 0.5;
+    .cor-item {
+      padding: 180px;
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 20px;
+        vertical-align: bottom;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        animation-name: visibl;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: both;
+        opacity: 0;
+
+        @keyframes visibl {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
         }
+      }
 
-        .cor-item {
-            padding: 180px;
+      p {
+        color: white;
+        animation-name: visibl;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-fill-mode: both;
+        opacity: 0;
 
-            h2 {
-                font-size: 44px;
-                margin-bottom: 20px;
-                vertical-align: bottom;
-                color: white;
-                font-weight: bold;
-                text-transform: uppercase;
-                animation-name: visibl;
-                animation-duration: 2s;
-                animation-delay: 1s;
-                animation-fill-mode: both;
-                opacity: 0;
+        @keyframes visibl {
+          from {
+            opacity: 0;
+          }
 
-                @keyframes visibl {
-                    from {
-                        opacity: 0;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-
-            }
-
-            p {
-                color: white;
-                animation-name: visibl;
-                animation-duration: 2s;
-                animation-delay: 1.5s;
-                animation-fill-mode: both;
-                opacity: 0;
-
-                @keyframes visibl {
-                    from {
-                        opacity: 0;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .btn {
-                animation-name: visibl;
-                animation-duration: 2s;
-                animation-delay: 2s;
-                animation-fill-mode: both;
-                opacity: 0;
-                margin-right: 20px;
-                padding: 10px 20px;
-
-                @keyframes visibl {
-                    from {
-                        opacity: 0;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-            }
-
-           .btn-outline-white{
-             animation-name: visibl;
-                animation-duration: 2s;
-                animation-delay: 2s;
-                animation-fill-mode: both;
-                opacity: 0;
-                margin-right: 20px;
-
-                @keyframes visibl {
-                    from {
-                        opacity: 0;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-           }
+          to {
+            opacity: 1;
+          }
         }
+      }
+
+      .btn {
+        animation-name: visibl;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        opacity: 0;
+        margin-right: 20px;
+        padding: 10px 20px;
+
+        @keyframes visibl {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+      }
+
+      .btn-outline-white {
+        animation-name: visibl;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        opacity: 0;
+        margin-right: 20px;
+
+        @keyframes visibl {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+      }
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        position: absolute;
-        display: inline-block;
-        width: 55px;
-        height: 55px;
-        border-radius: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        background-image: none;
-        line-height: 55px;
-        text-align: center;
-        font-size: 30px;
-        top: 50%;
+      position: absolute;
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: none;
+      line-height: 55px;
+      text-align: center;
+      font-size: 30px;
+      top: 50%;
     }
 
     .carousel-control-prev-icon {
-        left: 15px;
+      left: 15px;
     }
 
     .carousel-control-next-icon {
-        right: 15px;
-
+      right: 15px;
     }
-
+  }
 }
 #corusel {
   overflow: hidden;
@@ -153,7 +150,7 @@
       .item {
         .categories {
           margin-right: 10px;
-       a {
+          a {
             border-radius: 5px;
             display: block;
             text-align: center;
@@ -183,12 +180,11 @@
           .dark-orange {
             background-color: $dark-orange-color;
           }
-          .danger{
+          .danger {
             background-color: $danger-color;
           }
         }
       }
     }
   }
-}
 }

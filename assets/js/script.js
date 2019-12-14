@@ -74,26 +74,9 @@ $(document).ready(function () {
         }
     });
 
-    
-
-    // $(".item img").mouseover(function(){
-    //     if ($(".gallery-title").hasClass("d-none")){
-    //         $(".gallery-title").removeClass("d-none").addClass("d-block");
-    //     }        
-    // });
-    // $(".item img").mouseleave(function () {
-
-    //     console.log("ok");
-        
-    //     if ($(".gallery-title").hasClass("d-block")) {
-    //         $(".gallery-title").removeClass("d-block").addClass("d-none");
-    //     }
-    // });
-
-
-
-});
-
-AOS.init({
+    AOS.init({
     duration: 1200,
 });
+
+});
+

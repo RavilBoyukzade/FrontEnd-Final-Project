@@ -42,34 +42,24 @@
     color: white;
   }
 }
-.btn-outline-white {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  padding: 12px 30px;
-  &:before {
-    content: "";
-    background-color: #fff;
-    height: 100%;
-    width: 0;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-  }
-
-  &:hover {
-    -webkit-animation-duration: 2s;
+.btn-outline-white{
+   animation-name: hover;
     animation-duration: 2s;
-    -webkit-animation-delay: 2s;
     animation-delay: 2s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     opacity: 0;
-    border: 1px solid #fff;
+
+    @keyframes hover {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    border: 1px solid white;
     color: white;
     padding: 9px 20px;
     border-radius: 3px;
@@ -78,7 +68,32 @@
     overflow: hidden;
     z-index: 1;
     background-color: transparent;
-  }
+
+    &::before {
+        content: "";
+        background-color:white;
+        height: 100%;
+        width: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        @include transition(all 0.4s)
+    }
+
+    &:hover {
+        text-decoration: none;
+        color:$orange-color;
+
+        &::before {
+            left: 0%;
+            right: initial;
+            width: 100%;
+        }
+    }
+
+
 }
 .ripple {
   background-color: #ffffff;

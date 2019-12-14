@@ -2227,6 +2227,250 @@ body {
   top: 91px;
 }
 
+#detail .sidebar .latest-course .course-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#detail .sidebar .latest-course .course-content ul li {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#detail .sidebar .latest-course .course-content ul li .course-footer .course-img {
+  float: left;
+  margin-right: 10px;
+  max-width: 60px;
+}
+
+#detail .sidebar .latest-course .course-content ul li .course-txt {
+  position: relative;
+}
+
+#detail .sidebar .latest-course .course-content ul li .course-txt a {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  color: #292b2c;
+  font-size: 12px;
+}
+
+#detail .sidebar .latest-course .course-content ul li .course-txt a:hover {
+  text-decoration: none;
+  color: #FFBC09;
+}
+
+#detail .sidebar .latest-course .course-content ul li .course-txt span {
+  position: absolute;
+  top: 42px;
+}
+
+#detail .sidebar .course-category {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#detail .sidebar .course-category h5 {
+  padding: 10px;
+  position: relative;
+}
+
+#detail .sidebar .course-category h5:before {
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 11px;
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+  background-color: #ffbc09;
+  top: 40px;
+}
+
+#detail .sidebar .course-category h5:after {
+  background-color: #ddd;
+  position: absolute;
+  left: 11px;
+  right: 0;
+  height: 1px;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  z-index: 0;
+  top: 43px;
+}
+
+#detail .sidebar .course-category ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#detail .sidebar .course-category ul li {
+  padding-bottom: 15px;
+  line-height: normal;
+}
+
+#detail .sidebar .course-category ul li a {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  color: #292b2c;
+  font-size: 15px;
+  font-family: #888888;
+}
+
+#detail .sidebar .course-category ul li a::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+#detail .sidebar .course-category ul li a:hover {
+  text-decoration: none;
+  color: #FFBC09;
+}
+
+#detail .sidebar .course-category ul li a .cat-num {
+  float: right;
+}
+
+#detail .sidebar .recent-post {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#detail .sidebar .recent-post h5 {
+  padding: 10px;
+  position: relative;
+}
+
+#detail .sidebar .recent-post h5:before {
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 11px;
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+  background-color: #ffbc09;
+  top: 40px;
+}
+
+#detail .sidebar .recent-post h5:after {
+  background-color: #ddd;
+  position: absolute;
+  left: 11px;
+  right: 0;
+  height: 1px;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  z-index: 0;
+  top: 43px;
+}
+
+#detail .sidebar .recent-post .post-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#detail .sidebar .recent-post .post-content ul li {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#detail .sidebar .recent-post .post-content ul li .post-footer .post-img {
+  float: left;
+  margin-right: 10px;
+  max-width: 60px;
+}
+
+#detail .sidebar .recent-post .post-content ul li .post-txt {
+  position: relative;
+}
+
+#detail .sidebar .recent-post .post-content ul li .post-txt a {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  color: #292b2c;
+  font-size: 12px;
+}
+
+#detail .sidebar .recent-post .post-content ul li .post-txt a:hover {
+  text-decoration: none;
+  color: #FFBC09;
+}
+
+#detail .sidebar .recent-post .post-content ul li .post-txt span {
+  position: absolute;
+  top: 42px;
+}
+
+#detail .sidebar .tags {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#detail .sidebar .tags h5 {
+  padding: 10px;
+  position: relative;
+}
+
+#detail .sidebar .tags h5:before {
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 11px;
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+  background-color: #ffbc09;
+  top: 40px;
+}
+
+#detail .sidebar .tags h5:after {
+  background-color: #ddd;
+  position: absolute;
+  left: 11px;
+  right: 0;
+  height: 1px;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  z-index: 0;
+  top: 43px;
+}
+
+#detail .sidebar .tags .tags-content a {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  color: #292b2c;
+}
+
+#detail .sidebar .tags .tags-content a:hover {
+  text-decoration: none;
+  color: #FFBC09;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

@@ -74,6 +74,8 @@ $(document).ready(function () {
         }
     });
 
+    
+
     // $(".item img").mouseover(function(){
     //     if ($(".gallery-title").hasClass("d-none")){
     //         $(".gallery-title").removeClass("d-none").addClass("d-block");
@@ -90,4 +92,8 @@ $(document).ready(function () {
 
 
 
+});
+
+AOS.init({
+    duration: 1200,
 });

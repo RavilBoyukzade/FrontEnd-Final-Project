@@ -1691,6 +1691,143 @@ p {
   border-right: 0 solid #dad1b9;
 }
 
+#detail .course .card {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#detail .course .card .card-img {
+  overflow: hidden;
+}
+
+#detail .course .card .card-img a {
+  display: block;
+}
+
+#detail .course .card .card-img a img {
+  width: 100%;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+#detail .course .card .card-img a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#detail .course .card .card-body {
+  padding: 0px;
+}
+
+#detail .course .card .card-body .card-txt {
+  padding: 15px;
+}
+
+#detail .course .card .card-body .card-txt .card-inform p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#detail .course .card .card-body .card-txt .course-inform {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#detail .course .card .card-body .card-txt .course-inform .stars {
+  color: #FFBC09;
+  font-size: 12px;
+  float: left;
+}
+
+#detail .course .card .card-body .card-txt .course-inform .view-like {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  font-size: 12px;
+}
+
+#detail .course .card .card-body .card-txt .course-inform .view-like li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#detail .course .card .card-body .card-txt .course-inform .view-like li a:hover {
+  color: #FFBC09;
+}
+
+#detail .course .card .card-body .card-txt .course-inform .view-like li:first-child {
+  margin-right: 5px;
+}
+
+#detail .course .card .card-footer {
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+}
+
+#detail .course .card .card-footer .teacher a {
+  color: #292b2c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#detail .course .card .card-footer .teacher a img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+#detail .course .card .card-footer .teacher a span {
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#detail .course .card .card-footer .teacher a span:hover {
+  color: #FFBC09;
+}
+
+#detail .course .card .card-footer .price {
+  float: right;
+  margin-top: 7px;
+}
+
+#detail .course .card .card-footer .price .free {
+  position: relative;
+  border: 1px solid #c3e6cb;
+  color: #165825;
+  background-color: #d4edda;
+  padding: 5px 15px;
+  margin: 0px;
+  border-radius: 0.25rem;
+}
+
+#detail .course .card .card-footer .price .paid {
+  position: relative;
+  border: 1px solid #bee5eb;
+  color: #236671;
+  background-color: #d1ecf1;
+  padding: 5px 15px;
+  margin: 0px;
+  border-radius: 0.25rem;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

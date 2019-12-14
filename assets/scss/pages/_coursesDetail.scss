@@ -121,26 +121,134 @@
                     color: $orange-color;
                   }
                 }
-                ul{
-                    list-style-type: none;
-                    display: flex;
-                    padding:0;
-                    margin:0;
-                    li{
-                         border-right:0 solid #dad1b9;
-                         padding: 0;
-                         margin: 2px;
-                        i{
-                            color: $orange-color;
-                            font-size: 12px;
-                        }
+                ul {
+                  list-style-type: none;
+                  display: flex;
+                  padding: 0;
+                  margin: 0;
+                  li {
+                    border-right: 0 solid #dad1b9;
+                    padding: 0;
+                    margin: 2px;
+                    i {
+                      color: $orange-color;
+                      font-size: 12px;
                     }
+                  }
                 }
               }
             }
-            &:last-child{
-                border-right:0 solid #dad1b9;
+            &:last-child {
+              border-right: 0 solid #dad1b9;
             }
+          }
+        }
+      }
+    }
+    .card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      margin-top: 30px;
+      .card-img {
+        overflow: hidden;
+        a {
+          display: block;
+          img {
+            width: 100%;
+            @include transition(all 0.3s);
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      .card-body {
+        padding: 0px;
+        .card-txt {
+          padding: 15px;
+          .card-inform {
+            p {
+              margin-bottom: 10px;
+              text-align: left;
+            }
+          }
+          .course-inform {
+            justify-content: space-between;
+            .stars {
+              color: $orange-color;
+              font-size: 12px;
+              float: left;
+            }
+            .view-like {
+              list-style: none;
+              display: flex;
+              float: right;
+              font-size: 12px;
+              li {
+                a {
+                  text-decoration: none;
+                  color: black;
+                  @include transition(all 0.5s);
+                  &:hover {
+                    color: $orange-color;
+                  }
+                }
+                &:first-child {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .card-footer {
+        background-color: white;
+        justify-content: space-between;
+        display: flex;
+        padding: 15px;
+        width: 100%;
+        .teacher {
+          a {
+            color: $header-color;
+            text-decoration: none;
+
+            cursor: pointer;
+
+            img {
+              border-radius: 100%;
+              max-width: 40px;
+              margin-right: 10px;
+            }
+            span {
+              cursor: pointer;
+              @include transition(all 0.5s);
+              &:hover {
+                color: $orange-color;
+              }
+            }
+          }
+        }
+        .price {
+          float: right;
+          margin-top: 7px;
+          .free {
+            position: relative;
+            border: 1px solid #c3e6cb;
+            color: $dark-success-color;
+            background-color: $light-succsess-color;
+            padding: 5px 15px;
+            margin: 0px;
+            border-radius: 0.25rem;
+          }
+          .paid {
+            position: relative;
+            border: 1px solid #bee5eb;
+            color: $darken-sea-color;
+            background-color: $ligter-sea-color;
+            padding: 5px 15px;
+            margin: 0px;
+            border-radius: 0.25rem;
           }
         }
       }

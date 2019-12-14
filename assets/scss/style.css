@@ -2471,6 +2471,59 @@ body {
   color: #FFBC09;
 }
 
+#contact-head {
+  background-image: url(../img/about_bg.jpg);
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#contact-head:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#contact-head h2 {
+  color: white;
+}
+
+#contact-head .links {
+  margin-top: 25px;
+  margin-left: 372px;
+}
+
+#contact-head .links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact-head .links ul li {
+  color: white;
+  padding: 3px;
+}
+
+#contact-head .links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact-head .links ul li a:hover {
+  color: #FFBC09;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;

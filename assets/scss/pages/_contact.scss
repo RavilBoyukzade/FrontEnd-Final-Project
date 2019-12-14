@@ -1,0 +1,43 @@
+#contact-head {
+  background-image: url(../img/about_bg.jpg);
+  padding: 100px 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h2 {
+    color: white;
+  }
+  .links {
+    margin-top: 25px;
+    margin-left: 372px;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      li {
+        color: white;
+        padding: 3px;
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: $orange-color;
+          }
+        }
+      }
+    }
+  }
+}

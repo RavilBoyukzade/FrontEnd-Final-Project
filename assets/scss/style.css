@@ -2524,6 +2524,149 @@ body {
   color: #FFBC09;
 }
 
+#get-in-touch {
+  padding: 100px;
+}
+
+#get-in-touch .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#get-in-touch .row .intro {
+  text-align: center;
+}
+
+#get-in-touch .box-shadow {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#get-in-touch .box-shadow .contact {
+  padding: 25px;
+  margin-top: 35px;
+}
+
+#get-in-touch .box-shadow .contact-map {
+  overflow: hidden !important;
+  width: 100%;
+  height: 100% !important;
+}
+
+#contact-information {
+  padding: 100px;
+}
+
+#contact-information .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact-information .row .intro {
+  text-align: center;
+}
+
+#contact-information .icon-box {
+  padding: 30px;
+  z-index: 9;
+  margin-top: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#contact-information .icon-box img {
+  position: relative;
+  margin-bottom: 16px !important;
+  max-width: 60px;
+}
+
+#contact-information .icon-box .cont-text {
+  position: relative;
+  color: white;
+}
+
+#contact-information .icon-box .cont-text h5 {
+  text-transform: capitalize;
+  color: white;
+}
+
+#contact-information .icon-box .cont-text p {
+  margin: 0;
+  color: white;
+}
+
+#contact-information .adress {
+  background-image: url(../img/address_img.jpg);
+  background-position: center center;
+  background-size: cover;
+  -webkit-animation-delay: 0.02s;
+          animation-delay: 0.02s;
+  opacity: 1;
+  position: relative;
+  text-align: center !important;
+  border-radius: 10px;
+}
+
+#contact-information .adress:before {
+  background-color: rgba(245, 87, 108, 0.9);
+  border-radius: 10px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#contact-information .call {
+  background-image: url(../img/call_img.jpg);
+  background-position: center center;
+  background-size: cover;
+  -webkit-animation-delay: 0.02s;
+          animation-delay: 0.02s;
+  opacity: 1;
+  position: relative;
+  text-align: center !important;
+  border-radius: 10px;
+}
+
+#contact-information .call:before {
+  background-color: rgba(179, 211, 105, 0.9);
+  border-radius: 10px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#contact-information .email {
+  background-image: url(../img/email_img.jpg);
+  background-position: center center;
+  background-size: cover;
+  -webkit-animation-delay: 0.02s;
+          animation-delay: 0.02s;
+  opacity: 1;
+  position: relative;
+  text-align: center !important;
+  border-radius: 10px;
+}
+
+#contact-information .email:before {
+  background-color: rgba(255, 188, 9, 0.9);
+  border-radius: 10px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .btn {
   background-color: #FFBC09;
   padding: 7px 15px;
